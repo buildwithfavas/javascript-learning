@@ -1,0 +1,42 @@
+Basics of javascript:
+Variables: var, let, const
+Hoisting of variables
+
+Functions in js:
+Arrow functions
+higher order functions
+
+Arrays and objects:
+array destructuring
+object destructuring
+rest operator
+spread operator
+
+Conditions in JavaScript:
+if else
+ternary operator
+using && and ||
+Optional Chaining
+
+Array Methods:
+map()
+filter(0
+reduce()
+sort()
+
+Event Listeners:
+onClick
+onBlur
+onChange
+onFocus
+setTimeout() & setInterval()\
+
+Asynchronus Events:
+Callbacks
+Callback Hell
+Promises
+Promise APIs
+
+Async/await
+
+try catch
