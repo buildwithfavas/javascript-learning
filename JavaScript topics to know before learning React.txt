@@ -20,7 +20,7 @@ Optional Chaining
 
 Array Methods:
 map()
-filter(0
+filter()
 reduce()
 sort()
 
