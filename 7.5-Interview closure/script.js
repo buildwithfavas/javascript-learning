@@ -2,8 +2,9 @@
 // A function along with reference to its outer environment together forms a closure
 // in other words you can say closure is a combination of a function and its lexical scope bundle togehther to form closure 
 
-//each and every function in js has the acces to its lexical environment ie, access to variables and functions in the environments of its parents, each and every function has access to them.
-//so even if the function executed in other scope not in orginal scope it still remembers its lexical environment where it was orginally present in the code.
+//each and every function in js has the acces to its lexical environment ie, access to variables and functions in the environments of its parents,
+//each and every function has access to them.so even if the function executed in other scope not in orginal scope 
+//it still remembers its lexical environment where it was orginally present in the code.
 
 //Example:
 function outer() {
@@ -29,7 +30,7 @@ function outest() {
 }
 let a = 100; // no effect on printing as inner() lexical scope parent has a=10; if 25th line is not there its print 100 as closure has access to it if not present there its goes parent to grand parent like that.
 var close = outest()("Helloworld");
-close();
+close();   //10 Helloworld 20
 
 // Uses of Closures:
 // Module Design Pattern
@@ -78,7 +79,8 @@ counter.decrementCounter(); //1
 
 //Disadvantages of closure:
 //Over consumption of memory
-//those closure variables are not garbage collected accumulating a lot of memory if we create a lot of closures ,not garbage collected still the program expires.
+//those closure variables are not garbage collected accumulating a lot of memory if we create a lot of closures,
+//not garbage collected still the program expires.
 //Lead to memory leaks
 //may freeze the browser
 

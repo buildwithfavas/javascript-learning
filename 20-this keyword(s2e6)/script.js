@@ -18,7 +18,7 @@ x(); // output: undefined
 // value of this is "undefined" but as this substitution occurs in non strict mode to global object ie,to window
 
 // If the value of this keyword is undefined or null
-// this keyword wilt be replaced with globalObject
+// this keyword will be replaced with globalObject
 // only in non strict mode
 //---------------------------------------------------------
 // =====this keyword value depends on how this is called (window)=====

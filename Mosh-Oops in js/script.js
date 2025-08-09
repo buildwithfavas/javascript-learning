@@ -145,6 +145,7 @@ function Circle11(radius) {
         console.log('draw');
     }
 }
+
 const circleTest = new Circle11(10);
 circleTest.location = { X: 1 };
 const propertyName = 'center location';

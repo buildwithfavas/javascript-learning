@@ -24,7 +24,7 @@ function a2() {
 }
 
 a2();
-console.log(b2); //output: reference error: b is not defined 
+console.log(b2); //output: reference error: b2 is not defined 
 //-----------------------------------------------
 //When execution context is created in the memory component have the reference its lexical environment of parent.
 //scope chain means its scope to its parents in a hirarcy(lexical environment)
@@ -35,4 +35,4 @@ function a5() {
         console.log(b5);
     }
 }
-a5();
+a5(); //output: 10

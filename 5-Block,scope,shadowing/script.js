@@ -23,7 +23,7 @@ console.log(a12); // 10
 console.log(b12); // refernce error b12 is not defined
 console.log(c12); // refernce error c12 is not defined
 //----------------------------------
-//Shadowing:
+//Shadowing:  (var)
 var a11 = 1000;
 {
     var a11 = 10;
@@ -33,18 +33,16 @@ var a11 = 1000;
     console.log(b11); // 20
     console.log(c11); // 30
 }
-console.log(a11); // 10
+console.log(a11); // 10 //Shadowing
 //----------------------------------
-let b111 = 1111;  //let and const same way scope.
+let b111 = 1111;  //let and const same way scope. (let & const)
 {
     var a111 = 10;
     let b111 = 2222;
     const c111 = 30;
     console.log(a111); // 10
-    console.log(b111); // 222 //Shadowing
+    console.log(b111); // 2222 //Shadowing
     console.log(c111); // 30
 }
 console.log(b111); // 1111
 //----------------------------------
-
-

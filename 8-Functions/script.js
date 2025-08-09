@@ -10,7 +10,7 @@
 a();   // important => Hoisting is possible in Function Statement or Function Declaration
 b();   // b will be undefined and cannot be called like b();
 xyz(); // error: reference error xyz is not defined ,//it can't be accessed outside.
-//-------------------------------------------
+
 // Function Statement/Function Declaration
 // a normal function with function keyword and function name with its statements inside.
 function a() {   // Hoisting is possible

@@ -5,7 +5,7 @@
 
 //Issues with Callbacks:
 
-//1. Callback Hel l
+//1. Callback Hell
 const cart = ["shoes", "pants", "kurtha"];
 
 api.createOrder(cart,function () {

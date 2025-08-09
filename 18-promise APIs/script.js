@@ -32,7 +32,7 @@
 //if first setteled promise fails error will be thrown.
 //ie, it will return the result of first setteled promise.
 //-----------------------------------------------
-//4.Promise.all(p1, p2, p3)
+//4.Promise.any(p1, p2, p3)
 //       time : 3s, 1s, 2s
 
 //seeking for the first success (if any gets rejected it wait for the successfull)

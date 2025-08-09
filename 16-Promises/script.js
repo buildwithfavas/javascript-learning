@@ -16,7 +16,7 @@ createOrder(cart, function (orderld) { //passing function (giving whole control)
 const promise = createOrder(cart);
 
 promise.then(function (orderld) {  //attaching function (call only once)
-    proceedToPaynent(orderId);
+    proceedToPayment(orderId);
 });
 //----------------------------------------------------------
 //Deep dive to Promise:
