@@ -79,7 +79,6 @@ const obj3 = {
 };
 obj3.x(); //output: {a: 50, x: ƒ} ie, (inside arrow function the this will be its enclosing lexical context)
 
-
 //---------------------------------------------------------
 // =====this inside DOM =====
 //this will be reference to the html element

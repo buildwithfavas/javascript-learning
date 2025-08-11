@@ -84,6 +84,4 @@ console.log(ageFrequency);  //output: {26: 2, 50: 1, 75: 1}
 //------
 //Function chaining:
 const firstNameOfUsersAbove30 = users.filter(x => x.age > 30).map(x => x.firstName);
-console.log(firstNameOfUsersAbove30);  //output : ['donald', 'elon']0: "donald"1: "elon"length: 2[[Prototype]]: Array(0)
-
-
+console.log(firstNameOfUsersAbove30);  //output : ['donald', 'elon'] 0: "donald"1: "elon"length: 2[[Prototype]]: Array(0)

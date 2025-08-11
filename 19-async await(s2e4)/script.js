@@ -203,7 +203,8 @@ handlePromise6();
 //-----------------------------------------------------------------------
 
 //What happens behind the seens:
-//When await is there the promise execution will suspend it won't block the main thread (so call stack will be free) or freeze the webpage and once its done it will come back to callstack
+//When await is there the promise execution will suspend it won't block the main thread (so call stack will be free) or freeze the webpage 
+//and once its done it will come back to callstack
 
 //-----------------------------------------------------------------------
 //Realworld examples of async/await:
@@ -239,22 +240,18 @@ handlePromise8();
 //or old method:
 
 async function handlePromise8() {
-    try {
-        const data = await fetch(API_URL);
-        const jsonValue = await data.json();
-        console.log(jsonValue);
-    } catch (err) {
-        console.log(err);
-    }
+    const data = await fetch(API_URL);
+    const jsonValue = await data.json();
+    console.log(jsonValue);
 }
-handlePromise8().catch((err)=>console.log(err));
+handlePromise8().catch((err) => console.log(err));
 //-----------------------------------------------------------------------
 
 //Interview tips:
 //what is async?
 // async is a keyword which is used with function, await can be used only inside async
-// function to handle promises and these promises are asynchronous 
-// explain it with some examples even dive deep and show them that 
+// function to handle promises and these promises are asynchronous
+// explain it with some examples even dive deep and show them that
 // if there are multiple promises how do async await handles that tell your interviewers that how the program works behind the scenes
 //-----------------------------------------------------------------------
 
@@ -263,9 +260,5 @@ handlePromise8().catch((err)=>console.log(err));
 //async/await is just a syntactic sugar over then and catch
 // when we use these async and await behind the scene JavaScript is using its own promise that then promise that catch and all that stuff only
 // it is just a syntactical sugar over promise native methods
-// in await fetch we don't have to deal with callbacks, Otherwise have to pass a call back and that callback will be executed, so you'll have to do promise chaining for that 
-// Here you don't have to do Promise chaining.
-
-
-
-
+// in await fetch we don't have to deal with callbacks, Otherwise have to pass a call back and that callback will be executed,
+// so you'll have to do promise chaining for that. Here you don't have to do promise chaining.

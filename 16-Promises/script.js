@@ -51,6 +51,5 @@ createorder(cart)
 
 createorder(cart)
     .then(orderId => proceedToPayment(orderId))
-    .then(paymentlnfo => showOrderSummary(paymentInfo))
-    .then(paymentlnfo => updateWalletBalance(paymentInfo))
-
+    .then(paymentInfo => showOrderSummary(paymentInfo))
+    .then(paymentInfo => updateWalletBalance(paymentInfo))

@@ -26,7 +26,7 @@ const diameter = function (radius) {
 Array.prototype.calculate = function (logic) {  // Polyfill // piece of code (usually JavaScript) that adds missing functionality to older browsers so they can support features that are built into newer JavaScript specifications.
     const output = [];
     for (let i = 0; i < this.length; i++) {  //this keyword will point out to the array
-        output.push(logic(arr[i]));
+        output.push(logic(this[i]));
     }
     return output;
 };
@@ -34,5 +34,5 @@ Array.prototype.calculate = function (logic) {  // Polyfill // piece of code (us
 console.log(radius.calculate(area));  // can make like this
 
 // console.log(calculate(radius, area));
-console.log(calculate(radius, cicumference));
-console.log(calculate(radius, diameter));
+// console.log(calculate(radius, cicumference));
+// console.log(calculate(radius, diameter));

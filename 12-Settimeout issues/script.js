@@ -35,5 +35,3 @@ console.log("End");
 //Start
 //End
 //Callback
-
-

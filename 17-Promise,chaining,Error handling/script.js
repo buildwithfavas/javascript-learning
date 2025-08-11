@@ -47,8 +47,3 @@ function proceedToPayment(orderId){
 function validateCart(cart) {
     return true;  //try with true and false to see output
 }
-
-
-
-
-

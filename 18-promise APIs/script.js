@@ -113,7 +113,7 @@ const p12 = new Promise((resolve, reject) => {
     setTimeout(() => reject("P12 Failed"), 2000);
 });
 
-Promise.race([p10, p11, p12]).then(res => {
+Promise.any([p10, p11, p12]).then(res => {
     console.log(res);    //output: P10 Success
 })
 .catch(err => { 

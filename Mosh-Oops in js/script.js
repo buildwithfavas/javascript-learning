@@ -8,15 +8,25 @@
 
 //-----------------------------------------------------------
 //2.Encapsulation
-let employee = {
-    baseSalary: 30_000,
-    overtime: 10,
-    rate: 20,
-    getWage: function () {
-        return this.baseSalary + (this.overtime * this.rate);
+class Employee {
+    #baseSalary;
+    #overtime;
+    #rate;
+
+    constructor(baseSalary, overtime, rate) {
+        this.#baseSalary = baseSalary;
+        this.#overtime = overtime;
+        this.#rate = rate;
     }
-};
-employee.getWage();
+
+    getWage() {
+        return this.#baseSalary + (this.#overtime * this.#rate);
+    }
+}
+
+const emp = new Employee(30000, 10, 20);
+console.log(emp.getWage()); // ✅ 30200
+
 //-----------------------------------------------------------
 //1.Abstraction
 //Simpler Interface
@@ -46,7 +56,7 @@ employee.getWage();
 // Private Properties
 // Getters / Setters
 
-const circle = {  //object literal
+const circle = {
     radius: 1,
     location: {
         x: 1,
@@ -57,10 +67,10 @@ const circle = {  //object literal
     }
 };
 
-circle.draw(); //output: 
+circle.draw(); //output: draw
 
 //Factory function: (if we return an object its called factory function)
-function createCircle(radius) {
+function createCircle(radius) { //object literal
     return {
         radius,
         draw: function () {
@@ -163,15 +173,3 @@ console.log(keys);
 
 if ('radius' in circle)
     console.log('Circle has a radius.');
-
- 
-
-
-
-
-
-
-
-
-
-
